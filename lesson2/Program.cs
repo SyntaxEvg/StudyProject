@@ -124,6 +124,11 @@ namespace Less_2
                 if (number > 0 && number < 13)
                 {
                     Console.WriteLine($"Название месяца - {Mounth[1]}");
+
+                    if (number == 12 || number == 1 || number == 2)
+                    {
+                        Console.WriteLine("Дождливая зима");
+                    }
                     break;
                 }
                 else Console.WriteLine("Введите верные значения!");

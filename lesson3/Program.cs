@@ -61,7 +61,29 @@ namespace lesson3
         private static void Phonebook()
         {
             Console.WriteLine("Телефонный справочник");
-            int[,] array = new int[5, 2];
+            string[,] array = new string[5, 2];
+
+            array[0, 0] = "Вася";
+            array[1, 0] = "Коля";
+            array[2, 0] = "Саша";
+            array[3, 0] = "Никита";
+            array[4, 0] = "Лена";
+            array[0, 1] = "(921) 321 - 8194";
+            array[1, 1] = "(921) 362 - 1217";
+            array[2, 1] = "(921) 363 - 5082";
+            array[3, 1] = "(921) 879 - 1521";
+            array[4, 1] = "(921) 873 - 4824";
+
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.Write($"{array[i, j]}\t" );
+                }
+                Console.WriteLine();
+            }
+
+
 
         }
             private static void ArrayDiag()

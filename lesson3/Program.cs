@@ -24,7 +24,8 @@ namespace lesson3
                 Console.WriteLine("Морской бой»: вывести на экран массив 10х10, состоящий из символов X и O, где Х — элементы кораблей, а О — свободные клетки");
                 while (true)
                 {
-                    var temp = Console.ReadLine();
+                Console.WriteLine("5- если хотите выйти из программы");
+                var temp = Console.ReadLine();
                     int count = 0;
                     int.TryParse(temp, out count);
                     if (count != 0)
@@ -40,9 +41,9 @@ namespace lesson3
                             Phonebook();
                             break;
                             case 3:
-                                //"Определить, является ли введённое пользователем число чётным";
-                               
-                                break;
+                            //Написать программу, выводящую введённую пользователем строку в обратном порядке(olleH вместо Hello)
+                            WrtiteReverse();
+                            break;
                             case 4:
                                 break;                         
                             case 5:
@@ -56,6 +57,30 @@ namespace lesson3
                 }
             
             Console.ReadLine();
+        }
+
+        private static void WrtiteReverse()
+        {
+            Console.WriteLine("Введит строку, а я ее переверну и покажу");
+            while (true)
+            {
+                var str = Console.ReadLine();
+               
+                if (str.Length > 0 )
+                {
+                    Console.WriteLine($"Вы ввели {str}");
+                    var masStr = str.ToCharArray();
+                    Console.WriteLine($"Перевернули");
+                    for (int i = masStr.Length-1; i >= 0; i--)
+                    {
+                        Console.Write(masStr[i]);
+                    }
+                    Console.WriteLine();
+                    break;
+                }
+                else
+                    Console.WriteLine("Не верное число,попробовать еще раз");
+            }
         }
 
         private static void Phonebook()

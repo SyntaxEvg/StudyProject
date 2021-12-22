@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace lesson3
 {
@@ -45,7 +46,9 @@ namespace lesson3
                             WrtiteReverse();
                             break;
                             case 4:
-                                break;                         
+                            //Морской бой»: вывести на экран массив 10х10, состоящий из символов X и O, где Х — элементы кораблей, а О — свободные клетки
+                            Seabattle();
+                            break;                         
                             case 5:
                                 Environment.Exit(0);
                                 break;
@@ -57,6 +60,43 @@ namespace lesson3
                 }
             
             Console.ReadLine();
+        }
+
+       static Dictionary<int, char> XO= new Dictionary<int, char>(); 
+
+        private static void Seabattle()
+        {
+            var numbers = new char [10]{ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+            if (!XO.ContainsKey(1))
+            {
+                XO.Add(0, 'X');
+                XO.Add(1, '0');
+            }
+
+            //Морской бой»: вывести на экран массив 10х10, состоящий из символов X и O, где Х — элементы кораблей, а О — свободные клетки
+            Console.WriteLine("Морской бой");
+            char[,] array = new char[10, 10];
+
+            var rnd =new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    if (i == 0)
+                    {
+                        Console.Write($"{numbers[j]} ");//поля игры по верхнему и вниз 
+                    }
+                    else if (j == 0)
+                    {
+                        Console.Write($"{numbers[i]} ");//поля игры по верхнему и внизу слева
+                    }
+                    else { 
+                    int symb_rnd = rnd.Next(0, 2);
+                    Console.Write($"{XO[symb_rnd]} ");
+                }
+                }
+                Console.WriteLine();
+            }
         }
 
         private static void WrtiteReverse()

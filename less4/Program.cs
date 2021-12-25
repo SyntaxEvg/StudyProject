@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 namespace less4
 {
+    public enum MonthEnum
+    {
+        Winter, Spring, Summer, Autumn,Error
+    }
+
     internal class Program
     {
  
@@ -40,12 +45,12 @@ namespace less4
                             StringToNumbers();
                             break;
                         case 3:
-                            //Написать программу, выводящую введённую пользователем строку в обратном порядке(olleH вместо Hello)
-                            
+                            //Написать метод по определению времени года.На вход подаётся число – порядковый номер месяца.На выходе — значение из перечисления
+                            Season();
                             break;
                         case 4:
-                            //Морской бой»: вывести на экран массив 10х10, состоящий из символов X и O, где Х — элементы кораблей, а О — свободные клетки
-                          
+                            //Написать программу, вычисляющую число Фибоначчи для заданного значения рекурсивным способом
+                            FiboRec();
                             break;
                         case 5:
                             Environment.Exit(0);
@@ -54,13 +59,125 @@ namespace less4
                             break;
                     }
                 }
+                Console.WriteLine("Можно закрыть!");
                 Console.ReadLine();
             }
 
             
         }
 
-        private static void StringToNumbers()
+        private static void FiboRec()
+        {
+            Console.WriteLine("Написать программу, вычисляющую число Фибоначчи для заданного значения рекурсивным способом");
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("Введите число членов последовательности");
+                var nums = Console.ReadLine();
+
+                if (nums.Length > 0)
+                {
+                    int num;
+
+                    int.TryParse(nums, out num);
+
+                    if (num != 0)
+                    {
+                        var Fibo =RecMethod(num);
+                        Console.WriteLine($"Число Фибоначчи {Fibo}");
+                        Console.WriteLine("Для выхода Enter,для продолжения любую  другую клавишу ");
+                        if (Console.ReadKey().Key == ConsoleKey.Enter)
+                        {
+                            return;
+                        }
+                    }
+                    else
+                        Console.WriteLine($"число меньше 1 или не число ");
+
+                }
+
+            }
+        }
+
+        private static int RecMethod(int num)
+        {
+            if (num == 0 || num == 1)
+            {
+                return num;
+                
+            }
+            return RecMethod(num - 1) + 
+                   RecMethod(num - 2);
+        }
+
+        private static void Season()
+        {
+            Console.WriteLine("Написать метод по определению времени года.На вход подаётся число – порядковый номер месяца.На выходе — значение из перечисления (enum)" +
+                " — Winter, Spring, Summer, Autumn.Написать метод, принимающий на вход значение из этого перечисления и возвращающий название времени года(зима, весна, лето, осень). " +
+                "Используя эти методы, ввести с клавиатуры номер месяца и вывести название времени года.Если введено некорректное число," +
+                " вывести в консоль текст «Ошибка: введите число от 1 до 12».");
+
+
+            while (true)
+            {
+                
+                var nums = Console.ReadLine();
+
+                if (nums.Length > 0)
+                {
+                    int num;
+
+                    int.TryParse(nums, out num);
+                   
+                    if (num != 0 && num<13)
+                    {
+                        MonthEnum month= submitNumber(num);
+                        switch (month)
+                        {
+                            case MonthEnum.Winter:
+                               Console.WriteLine("зима");
+                                return;
+                            case MonthEnum.Spring:
+                                Console.WriteLine("весна");
+                                return;
+                            case MonthEnum.Summer:
+                                Console.WriteLine(" лето");
+                                return;
+                            case MonthEnum.Autumn:
+                                Console.WriteLine("осень");
+                                return;
+                            case MonthEnum.Error:
+                                Console.WriteLine($"Ошибка: введите число от 1 до 12");
+                                break;
+                            default:
+                                break;
+                        }
+
+                    }                   
+                    else
+                    Console.WriteLine($"Ошибка: введите число от 1 до 12");
+
+                }
+                
+            }
+
+        }
+
+        private static MonthEnum submitNumber(int num)
+        {
+            switch ((num % 12) / 3)
+            {
+                case 0:
+                    return MonthEnum.Winter;
+                case 1:
+                    return MonthEnum.Spring;
+                case 2:
+                    return MonthEnum.Summer;
+                default: return MonthEnum.Error;
+            }
+        }
+
+            private static void StringToNumbers()
         {
                Console.WriteLine("Написать программу, принимающую на вход строку — набор чисел," +
                    " разделенных пробелом, и возвращающую число — сумму всех чисел в строке." +

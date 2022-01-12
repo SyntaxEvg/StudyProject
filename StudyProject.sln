@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson3", "lesson3\lesson3.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "less4", "less4\less4.csproj", "{B7533FAD-3288-40AD-A2AD-BBD5922921F7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "less5", "..\less5\less5.csproj", "{9BAF29A3-A312-4E98-99BD-2E8C1DF61FAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "less5", "less5\less5.csproj", "{B371D792-7468-4117-BC92-9F82C4262A17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{B7533FAD-3288-40AD-A2AD-BBD5922921F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7533FAD-3288-40AD-A2AD-BBD5922921F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7533FAD-3288-40AD-A2AD-BBD5922921F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9BAF29A3-A312-4E98-99BD-2E8C1DF61FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9BAF29A3-A312-4E98-99BD-2E8C1DF61FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9BAF29A3-A312-4E98-99BD-2E8C1DF61FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9BAF29A3-A312-4E98-99BD-2E8C1DF61FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B371D792-7468-4117-BC92-9F82C4262A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B371D792-7468-4117-BC92-9F82C4262A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B371D792-7468-4117-BC92-9F82C4262A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B371D792-7468-4117-BC92-9F82C4262A17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "less5", "less5\less5.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Embedd", "Embedd\Embedd.csproj", "{97893459-574E-43F7-A7A5-34BA9BA195F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Less6", "Less6\Less6.csproj", "{D16B8631-360E-4130-90A4-A57CC75149CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Less6", "Less6\Less6.csproj", "{D16B8631-360E-4130-90A4-A57CC75149CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeReflectionLess6", "CodeReflectionLess6\CodeReflectionLess6.csproj", "{DA2EBBF4-A078-48BA-A1F4-74BC403843F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D16B8631-360E-4130-90A4-A57CC75149CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D16B8631-360E-4130-90A4-A57CC75149CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D16B8631-360E-4130-90A4-A57CC75149CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA2EBBF4-A078-48BA-A1F4-74BC403843F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA2EBBF4-A078-48BA-A1F4-74BC403843F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA2EBBF4-A078-48BA-A1F4-74BC403843F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA2EBBF4-A078-48BA-A1F4-74BC403843F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

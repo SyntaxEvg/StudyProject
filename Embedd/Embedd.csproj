@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1vqgv.84qeyft4l" />
+    <None Remove="2" />
+    <None Remove="3" />
+    <None Remove="4" />
+    <None Remove="_" />
+    <None Remove="1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Include="1vqgv.84qeyft4l" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="2" />
+    <EmbeddedResource Include="3" />
+    <EmbeddedResource Include="4" />
+    <EmbeddedResource Include="_" />
+    <EmbeddedResource Include="1" />
+  </ItemGroup>
+
+</Project>

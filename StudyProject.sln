@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "less4", "less4\less4.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "less5", "less5\less5.csproj", "{B371D792-7468-4117-BC92-9F82C4262A17}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Embedd", "Embedd\Embedd.csproj", "{97893459-574E-43F7-A7A5-34BA9BA195F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Less6", "Less6\Less6.csproj", "{D16B8631-360E-4130-90A4-A57CC75149CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{B371D792-7468-4117-BC92-9F82C4262A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B371D792-7468-4117-BC92-9F82C4262A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B371D792-7468-4117-BC92-9F82C4262A17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97893459-574E-43F7-A7A5-34BA9BA195F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97893459-574E-43F7-A7A5-34BA9BA195F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97893459-574E-43F7-A7A5-34BA9BA195F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97893459-574E-43F7-A7A5-34BA9BA195F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16B8631-360E-4130-90A4-A57CC75149CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16B8631-360E-4130-90A4-A57CC75149CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16B8631-360E-4130-90A4-A57CC75149CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16B8631-360E-4130-90A4-A57CC75149CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
